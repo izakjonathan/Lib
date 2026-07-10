@@ -1,4 +1,4 @@
-# Studio UI v1.0.0
+# Studio UI v1.0.1
 
 Stable Vite + React + TypeScript component-library baseline for GitHub and Vercel.
 
