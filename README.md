@@ -1,14 +1,16 @@
-# Studio UI v0.5.0
+# Studio UI v0.7.0
 
 A reusable React component library and visual browser for building client websites and web applications from documented local building blocks.
 
 ## This release
 
-- 27 documented component entries
-- Navigation: tabs, breadcrumbs and pagination
-- Feedback: badges, alerts, toast, tooltip, skeleton and empty state
-- Overlays: modal and drawer
-- Existing buttons, cards and forms retained
+- 44 documented component entries
+- Customer, invoice and booking cards
+- Notification center
+- Kanban workflow board
+- File-upload pattern
+- Compact dashboard layout composition
+- Existing data, navigation, feedback, overlays, forms, buttons and cards retained
 - Search, category filtering, responsive previews and copy-ready examples
 
 ## Run locally

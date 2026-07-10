@@ -1,3 +1,20 @@
+import { BookingCard } from "@/components/ui/booking-card";
+import { CustomerCard } from "@/components/ui/customer-card";
+import { DashboardLayout } from "@/components/ui/dashboard-layout";
+import { FileUpload } from "@/components/ui/file-upload";
+import { InvoiceCard } from "@/components/ui/invoice-card";
+import { KanbanBoard } from "@/components/ui/kanban-board";
+import { NotificationCenter } from "@/components/ui/notification-center";
+import { ActivityFeed } from "@/components/ui/activity-feed";
+import { AvatarStack } from "@/components/ui/avatar-stack";
+import { BarChart } from "@/components/ui/bar-chart";
+import { DataTable } from "@/components/ui/data-table";
+import { DonutChart } from "@/components/ui/donut-chart";
+import { KeyValueList } from "@/components/ui/key-value-list";
+import { LineChart } from "@/components/ui/line-chart";
+import { ProgressList } from "@/components/ui/progress-list";
+import { StatGrid } from "@/components/ui/stat-grid";
+import { Timeline } from "@/components/ui/timeline";
 import { ArrowRight, CircleDollarSign, Layers3, Plus, Sparkles } from "lucide-react";
 import { AlertBanner } from "@/components/ui/alert-banner";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -239,6 +256,93 @@ export const componentRegistry: ComponentEntry[] = [
     description: "A side panel for editing or inspecting content without leaving the current context.", status: "Responsive overlay",
     code: `<DrawerPanel />`, preview: <DrawerPanel />,
   },
+  {
+    slug: "data-table", title: "Data Table", category: "Data",
+    description: "A responsive project table with semantic markup, status indicators and row actions.", status: "Semantic table",
+    code: `<DataTable />`, preview: <DataTable />,
+  },
+  {
+    slug: "bar-chart", title: "Bar Chart", category: "Data",
+    description: "A lightweight weekly comparison chart built with CSS and no chart dependency.", status: "Dependency-free",
+    code: `<BarChart />`, preview: <BarChart />,
+  },
+  {
+    slug: "line-chart", title: "Line Chart", category: "Data",
+    description: "An accessible SVG trend chart with a responsive viewBox and layered area treatment.", status: "Responsive SVG",
+    code: `<LineChart />`, preview: <LineChart />,
+  },
+  {
+    slug: "donut-chart", title: "Donut Chart", category: "Data",
+    description: "A compact traffic distribution visual with a clear legend and central summary.", status: "CSS chart",
+    code: `<DonutChart />`, preview: <DonutChart />,
+  },
+  {
+    slug: "progress-list", title: "Progress List", category: "Data",
+    description: "A labelled set of progress indicators for milestones, capacity and completion states.", status: "ARIA-ready",
+    code: `<ProgressList />`, preview: <ProgressList />,
+  },
+  {
+    slug: "stat-grid", title: "Statistic Grid", category: "Data",
+    description: "A responsive metric group with directional changes and compact dashboard hierarchy.", status: "Dashboard pattern",
+    code: `<StatGrid />`, preview: <StatGrid />,
+  },
+  {
+    slug: "avatar-stack", title: "Avatar Stack", category: "Data",
+    description: "A compact collaborator group with overlap, overflow count and accessible names.", status: "Team pattern",
+    code: `<AvatarStack />`, preview: <AvatarStack />,
+  },
+  {
+    slug: "timeline", title: "Timeline", category: "Data",
+    description: "A vertical milestone history for project events, audits and workflow progress.", status: "Ordered history",
+    code: `<Timeline />`, preview: <Timeline />,
+  },
+  {
+    slug: "activity-feed", title: "Activity Feed", category: "Data",
+    description: "A scannable stream of user actions with icons, descriptions and relative timestamps.", status: "Feed pattern",
+    code: `<ActivityFeed />`, preview: <ActivityFeed />,
+  },
+  {
+    slug: "key-value-list", title: "Key Value List", category: "Data",
+    description: "A semantic description list for account, order and configuration summaries.", status: "Semantic DL",
+    code: `<KeyValueList />`, preview: <KeyValueList />,
+  },
+
+  {
+    slug: "customer-card", title: "Customer Card", category: "Business",
+    description: "A compact customer profile with contact details, account context and a clear profile action.", status: "CRM pattern",
+    code: `<CustomerCard />`, preview: <CustomerCard />,
+  },
+  {
+    slug: "invoice-card", title: "Invoice Card", category: "Business",
+    description: "A billing summary with amount, due state, client context and common invoice actions.", status: "Billing pattern",
+    code: `<InvoiceCard />`, preview: <InvoiceCard />,
+  },
+  {
+    slug: "booking-card", title: "Booking Card", category: "Business",
+    description: "A responsive booking summary for schedules, reservations and appointment workflows.", status: "Booking pattern",
+    code: `<BookingCard />`, preview: <BookingCard />,
+  },
+  {
+    slug: "notification-center", title: "Notification Center", category: "Business",
+    description: "A reusable notification panel with unread count, event icons and relative timestamps.", status: "Application pattern",
+    code: `<NotificationCenter />`, preview: <NotificationCenter />,
+  },
+  {
+    slug: "kanban-board", title: "Kanban Board", category: "Business",
+    description: "A responsive workflow board for tasks, project stages and lightweight operational planning.", status: "Workflow pattern",
+    code: `<KanbanBoard />`, preview: <KanbanBoard />,
+  },
+  {
+    slug: "file-upload", title: "File Upload", category: "Business",
+    description: "A drag-and-drop upload surface with native file input semantics and upload-progress feedback.", status: "Upload pattern",
+    code: `<FileUpload />`, preview: <FileUpload />,
+  },
+  {
+    slug: "dashboard-layout", title: "Dashboard Layout", category: "Layouts",
+    description: "A compact application-shell composition showing navigation, metrics and content regions together.", status: "Layout pattern",
+    code: `<DashboardLayout />`, preview: <DashboardLayout />,
+  },
+
 ];
 
 export function getComponent(slug: string) {
