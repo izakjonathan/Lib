@@ -1,34 +1,27 @@
-# Studio UI v0.4.0
+# Studio UI v0.5.0
 
-A Vite-powered internal component library and documentation browser for reusable React interface blocks.
+A reusable React component library and visual browser for building client websites and web applications from documented local building blocks.
 
-## Added in v0.4.0
+## This release
 
-- Typed action button with primary, secondary, outline, ghost and danger variants
-- Small, medium and large button sizes
-- Loading and icon states
-- Search field
-- Native select field
-- Textarea field
-- Toggle switch
-- Checkbox field
-- Complete project-brief form composition
-- Dedicated documentation routes for every new component
-- Expanded searchable catalogue with 16 entries
+- 27 documented component entries
+- Navigation: tabs, breadcrumbs and pagination
+- Feedback: badges, alerts, toast, tooltip, skeleton and empty state
+- Overlays: modal and drawer
+- Existing buttons, cards and forms retained
+- Search, category filtering, responsive previews and copy-ready examples
 
-## Local development
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Production build
+## Production
 
 ```bash
 npm run build
 ```
 
-## Vercel
-
-Use automatic Vite detection. Leave custom Install Command, Build Command and Output Directory empty in the Vercel dashboard. The included `vercel.json` handles client-side routes.
+The generated `dist` directory is deployed by Vercel. Node 22 and npm 10.9.4 are pinned. No environment-specific lockfile is included.

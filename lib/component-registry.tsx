@@ -1,4 +1,15 @@
 import { ArrowRight, CircleDollarSign, Layers3, Plus, Sparkles } from "lucide-react";
+import { AlertBanner } from "@/components/ui/alert-banner";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { DrawerPanel } from "@/components/ui/drawer-panel";
+import { EmptyState } from "@/components/ui/empty-state";
+import { ModalDialog } from "@/components/ui/modal-dialog";
+import { Pagination } from "@/components/ui/pagination";
+import { SkeletonCard } from "@/components/ui/skeleton-card";
+import { StatusBadge } from "@/components/ui/status-badge";
+import { Tabs } from "@/components/ui/tabs";
+import { ToastDemo } from "@/components/ui/toast-demo";
+import { TooltipDemo } from "@/components/ui/tooltip-demo";
 import { ActionButton } from "@/components/ui/action-button";
 import { AnimatedFlipCard } from "@/components/ui/animated-flip-card";
 import { ButtonShowcase } from "@/components/ui/button-showcase";
@@ -169,6 +180,64 @@ export const componentRegistry: ComponentEntry[] = [
     status: "Icon support",
     code: `<ActionButton rightIcon={<ArrowRight size={16} />}>\n  Continue\n</ActionButton>`,
     preview: <ActionButton rightIcon={<ArrowRight size={16}/>}>Continue</ActionButton>,
+  },
+
+  {
+    slug: "status-badge", title: "Status Badge", category: "Feedback",
+    description: "Compact semantic labels for statuses, categories and workflow states.", status: "Five tones",
+    code: `<StatusBadge tone="success">Active</StatusBadge>`,
+    preview: <div className="badge-showcase"><StatusBadge tone="neutral">Draft</StatusBadge><StatusBadge tone="success">Active</StatusBadge><StatusBadge tone="warning">Pending</StatusBadge><StatusBadge tone="danger">Blocked</StatusBadge><StatusBadge tone="accent">New</StatusBadge></div>,
+  },
+  {
+    slug: "alert-banner", title: "Alert Banner", category: "Feedback",
+    description: "A structured status message with distinct information, success, warning and danger tones.", status: "Role-aware",
+    code: `<AlertBanner title="Import complete" tone="success">24 records were added successfully.</AlertBanner>`,
+    preview: <div className="feedback-stack"><AlertBanner title="Import complete" tone="success">24 records were added successfully.</AlertBanner><AlertBanner title="Review required" tone="warning">Two records need attention.</AlertBanner></div>,
+  },
+  {
+    slug: "toast", title: "Toast Notification", category: "Feedback",
+    description: "A dismissible, non-blocking confirmation message for completed actions.", status: "Interactive",
+    code: `<ToastDemo />`, preview: <ToastDemo />,
+  },
+  {
+    slug: "tooltip", title: "Tooltip", category: "Feedback",
+    description: "A keyboard-accessible contextual hint revealed on hover or focus.", status: "Focus support",
+    code: `<TooltipDemo />`, preview: <TooltipDemo />,
+  },
+  {
+    slug: "skeleton-card", title: "Skeleton Card", category: "Feedback",
+    description: "A reduced-motion-aware loading placeholder for card and list content.", status: "Loading state",
+    code: `<SkeletonCard />`, preview: <SkeletonCard />,
+  },
+  {
+    slug: "empty-state", title: "Empty State", category: "Feedback",
+    description: "A complete empty-state composition with explanation and primary recovery action.", status: "Composed pattern",
+    code: `<EmptyState />`, preview: <EmptyState />,
+  },
+  {
+    slug: "tabs", title: "Tabs", category: "Navigation",
+    description: "A compact tab system for switching between related sections in place.", status: "ARIA tabs",
+    code: `<Tabs />`, preview: <Tabs />,
+  },
+  {
+    slug: "breadcrumbs", title: "Breadcrumbs", category: "Navigation",
+    description: "A responsive hierarchy trail with semantic navigation and current-page state.", status: "Semantic nav",
+    code: `<Breadcrumbs />`, preview: <Breadcrumbs />,
+  },
+  {
+    slug: "pagination", title: "Pagination", category: "Navigation",
+    description: "A keyboard-friendly page navigator with previous, next and current-page states.", status: "Interactive",
+    code: `<Pagination />`, preview: <Pagination />,
+  },
+  {
+    slug: "modal-dialog", title: "Modal Dialog", category: "Overlays",
+    description: "A focused confirmation dialog with overlay dismissal and explicit actions.", status: "Modal pattern",
+    code: `<ModalDialog />`, preview: <ModalDialog />,
+  },
+  {
+    slug: "drawer-panel", title: "Drawer Panel", category: "Overlays",
+    description: "A side panel for editing or inspecting content without leaving the current context.", status: "Responsive overlay",
+    code: `<DrawerPanel />`, preview: <DrawerPanel />,
   },
 ];
 
