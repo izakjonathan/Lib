@@ -18,7 +18,7 @@ export function StudioShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="studio-shell">
       <aside className={`sidebar ${open ? "sidebar--open" : ""}`}>
-        <div className="brand"><span>SU</span><div><strong>Studio UI</strong><small>v0.3.3</small></div><button className="mobile-close" onClick={() => setOpen(false)} aria-label="Close navigation"><X size={20}/></button></div>
+        <div className="brand"><span>SU</span><div><strong>Studio UI</strong><small>v0.4.0</small></div><button className="mobile-close" onClick={() => setOpen(false)} aria-label="Close navigation"><X size={20}/></button></div>
         <nav>{links.map(({href,label,icon:Icon}) => <a href={href} key={href} onClick={() => setOpen(false)}><Icon size={18}/>{label}</a>)}</nav>
         <div className="sidebar-note"><strong>Reusable by design</strong><span>Build client products from documented, proven blocks.</span></div>
       </aside>
