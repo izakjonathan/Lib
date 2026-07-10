@@ -66,9 +66,11 @@ export type ComponentEntry = {
   source?: string;
   accessibility?: string[];
   props?: ComponentProp[];
+  dependencies?: string[];
+  maturity?: "stable" | "beta";
 };
 
-export const componentRegistry: ComponentEntry[] = [
+const rawComponentRegistry: ComponentEntry[] = [
   {
     slug: "action-button",
     title: "Action Button",
@@ -428,7 +430,21 @@ export const componentRegistry: ComponentEntry[] = [
     code: `<AnalyticsPageTemplate />`,
     preview: <AnalyticsPageTemplate />,
   },
-];
+ ];
+
+const sourceOverrides: Record<string, string> = {
+  "button-with-icon": "components/ui/action-button.tsx",
+  "toast": "components/ui/toast-demo.tsx",
+  "tooltip": "components/ui/tooltip-demo.tsx",
+};
+
+export const componentRegistry: ComponentEntry[] = rawComponentRegistry.map((entry) => ({
+  ...entry,
+  source: entry.source ?? sourceOverrides[entry.slug] ?? `components/ui/${entry.slug}.tsx`,
+  accessibility: entry.accessibility ?? ["Semantic markup", "Visible keyboard focus", "Readable colour contrast"],
+  dependencies: entry.dependencies ?? ["react", "lucide-react"],
+  maturity: entry.maturity ?? "stable",
+}));
 
 export function getComponent(slug: string) {
   return componentRegistry.find((item) => item.slug === slug);

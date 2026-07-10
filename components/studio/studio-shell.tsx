@@ -1,4 +1,4 @@
-import { Box, Component, Frame, Home, Menu, Palette, Search, Shapes, ShieldCheck, X } from "lucide-react";
+import { Box, Component, Frame, Home, Menu, PackageCheck, Palette, Search, Shapes, ShieldCheck, X } from "lucide-react";
 import { useState } from "react";
 import { GlobalSearch } from "./global-search";
 import { ThemeToggle } from "./theme-toggle";
@@ -13,6 +13,7 @@ const links = [
   { href: "/#library", label: "Data", icon: Search },
   { href: "/#library", label: "Business", icon: Box },
   { href: "/quality", label: "Quality report", icon: ShieldCheck },
+  { href: "/release", label: "v1.0 release", icon: PackageCheck },
 ];
 
 export function StudioShell({ children }: { children: React.ReactNode }) {
@@ -21,7 +22,7 @@ export function StudioShell({ children }: { children: React.ReactNode }) {
     <div className="studio-shell">
       <a className="skip-link" href="#main-content">Skip to content</a>
       <aside className={`sidebar ${open ? "sidebar--open" : ""}`}>
-        <div className="brand"><span>SU</span><div><strong>Studio UI</strong><small>v0.9.0</small></div><button className="mobile-close" onClick={() => setOpen(false)} aria-label="Close navigation"><X size={20}/></button></div>
+        <div className="brand"><span>SU</span><div><strong>Studio UI</strong><small>v1.0.0</small></div><button className="mobile-close" onClick={() => setOpen(false)} aria-label="Close navigation"><X size={20}/></button></div>
         <nav>{links.map(({href,label,icon:Icon}) => <a href={href} key={`${href}-${label}`} onClick={() => setOpen(false)}><Icon size={18}/>{label}</a>)}</nav>
         <div className="sidebar-note"><strong>Reusable by design</strong><span>Build client products from documented, proven blocks.</span></div>
       </aside>

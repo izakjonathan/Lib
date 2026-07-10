@@ -1,22 +1,27 @@
-# Studio UI v0.9.0
+# Studio UI v1.0.0
 
-Quality and API refinement release for the reusable Studio UI component library.
+Stable Vite + React + TypeScript component-library baseline for GitHub and Vercel.
 
 ## Included
-- 49 documented entries
-- Functional global component search with Command/Ctrl + K
-- Dedicated quality and accessibility report
-- Component API tables and source-path documentation
-- Responsive desktop, tablet and mobile previews
+- Searchable component browser
+- 49 reusable entries across UI, business, layouts and templates
+- Responsive desktop/tablet/mobile previews
+- Copyable usage and import snippets
+- Source paths, dependency metadata and accessibility guidance
+- Saved-component workflow using local storage
+- Quality report and v1.0 release dashboard
+- Downloadable JSON component manifest
 - Light and dark themes
-- Vite + React + TypeScript
-- Vercel-ready SPA routing
 
-## Commands
+## Run
 ```bash
 npm install
 npm run dev
+```
+
+## Validate
+```bash
 npm run build
 ```
 
-Node.js 22 is configured in `.nvmrc` and `package.json`.
+Node.js 22.x and npm 10.9.4 are configured.
