@@ -1,9 +1,11 @@
 {
   "name": "studio-ui",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=20 <25" },
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -21,5 +23,6 @@
     "@vitejs/plugin-react": "6.0.3",
     "typescript": "5.9.3",
     "vite": "8.1.4"
-  }
+  },
+  "packageManager": "npm@10.9.4"
 }

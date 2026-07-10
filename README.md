@@ -1,19 +1,22 @@
-# Studio UI v0.3.3 — Deployment Fix
+# Studio UI v0.3.4
 
-This release preserves the Studio UI v0.3 component browser while replacing the failing Next.js 16 static build pipeline with Vite.
+Vite-based Studio UI component browser.
 
-## Why
-The previous package reproducibly completed compilation, type checking, and static page generation, then hung indefinitely during Next.js “Collecting build traces.” Vercel therefore never received a completed build.
+## Deployment fix
 
-## Run
+This release removes the environment-generated lockfile that referenced a private build registry. All dependency versions remain exactly pinned in `package.json`, and Vercel is pinned to Node.js 22 with npm 10.9.4.
+
+## Local development
+
 ```bash
-npm ci
+npm install
 npm run dev
 ```
 
-## Production verification
+## Production
+
 ```bash
 npm run build
 ```
 
-Vercel auto-detects Vite and publishes `dist/`. The included rewrite allows direct loading of component documentation URLs.
+Vercel should use automatic Vite detection with no custom dashboard build or install overrides.
