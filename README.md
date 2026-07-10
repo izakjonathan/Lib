@@ -24,3 +24,13 @@ npm run build
 ```
 
 Deploy the repository root directly to Vercel. Framework preset should be Next.js and all build/output overrides should be left blank so Vercel can detect the static export automatically.
+
+## Vercel deployment (v0.3.2)
+
+This release deliberately deploys the generated `out` folder as a static site rather than asking Vercel to post-process it as a managed Next.js application.
+
+- Framework is explicitly set to `null` in `vercel.json`.
+- Install command is `npm ci --no-audit --no-fund`.
+- Build command is `npm run build`.
+- Output directory is `out`.
+- Keep the repository root set to the directory containing `package.json` and `vercel.json`.

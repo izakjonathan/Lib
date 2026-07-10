@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[8257,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"StudioShell"]
+3:I[1815,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"ComponentDetail"]
+4:I[5352,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"LoginForm"]
+5:I[484,[],"OutletBoundary"]
+6:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"children":["$","$L3",null,{"entry":{"slug":"login-form","title":"Login Form","category":"Forms","description":"A complete dark login surface with semantic fields and reusable form styling.","status":"Form pattern","code":"<LoginForm />","preview":["$","$L4",null,{}]}}]}],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"12Z2g_DTNDhH_b0rbxMBK"}
+7:null

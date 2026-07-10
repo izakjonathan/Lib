@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[8257,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"StudioShell"]
+3:I[1815,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"ComponentDetail"]
+4:I[1265,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"default"]
+5:I[484,[],"OutletBoundary"]
+6:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"children":["$","$L3",null,{"entry":{"slug":"neumorphic-button","title":"Neumorphic Button","category":"Buttons","description":"A tactile dark action button with pressed, hover and keyboard-focus states.","status":"Accessible","code":"<NeumorphicButton icon={<Sparkles size={18} />}>\n  Create project\n</NeumorphicButton>","preview":["$","button",null,{"className":"neo-button","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z","key":"1s2grr"}],["path",{"d":"M20 2v4","key":"1rf3ol"}],["path",{"d":"M22 4h-4","key":"gwowj6"}],["circle",{"cx":"4","cy":"20","r":"2","key":"6kqj1y"}]],"className":"lucide-sparkles","size":18}],["$","span",null,{"children":"Create project"}]]}]}}]}],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"12Z2g_DTNDhH_b0rbxMBK"}
+7:null
