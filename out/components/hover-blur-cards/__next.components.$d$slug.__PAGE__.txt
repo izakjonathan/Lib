@@ -1,7 +1,0 @@
-1:"$Sreact.fragment"
-2:I[8257,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"StudioShell"]
-3:I[1815,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"ComponentDetail"]
-4:I[484,[],"OutletBoundary"]
-5:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"children":["$","$L3",null,{"entry":{"slug":"hover-blur-cards","title":"Hover Blur Group","category":"Cards","description":"A grouped-card interaction that focuses the hovered item and softens neighbouring cards.","status":"Group interaction","code":"<HoverBlurCards />","preview":["$","div",null,{"className":"hover-cards","children":[["$","article","Discover",{"className":"hover-card hover-card--rose","tabIndex":0,"children":[["$","strong",null,{"children":"Discover"}],["$","span",null,{"children":"Explore the library"}]]}],["$","article","Compose",{"className":"hover-card hover-card--blue","tabIndex":0,"children":[["$","strong",null,{"children":"Compose"}],["$","span",null,{"children":"Combine proven blocks"}]]}],["$","article","Ship",{"className":"hover-card hover-card--green","tabIndex":0,"children":[["$","strong",null,{"children":"Ship"}],["$","span",null,{"children":"Deploy with confidence"}]]}]]}]}}]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"12Z2g_DTNDhH_b0rbxMBK"}
-6:null

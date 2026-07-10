@@ -1,8 +1,0 @@
-1:"$Sreact.fragment"
-2:I[8257,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"StudioShell"]
-3:I[1815,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"ComponentDetail"]
-4:I[1265,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"default"]
-5:I[484,[],"OutletBoundary"]
-6:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"children":["$","$L3",null,{"entry":{"slug":"empty-card","title":"Empty Card","category":"Cards","description":"A reusable elevated surface for custom content, empty states and compact feature blocks.","status":"Responsive","code":"<EmptyCard>\n  <div>Your content</div>\n</EmptyCard>","preview":["$","div",null,{"className":"empty-card","children":["$","span",null,{"className":"empty-card__content","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z","key":"zw3jo"}],["path",{"d":"M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12","key":"1wduqc"}],["path",{"d":"M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17","key":"kqbvx6"}]],"className":"lucide-layers","size":30}],["$","strong",null,{"children":"Drop content here"}],["$","small",null,{"children":"Reusable surface primitive."}]]}]}]}}]}],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"12Z2g_DTNDhH_b0rbxMBK"}
-7:null

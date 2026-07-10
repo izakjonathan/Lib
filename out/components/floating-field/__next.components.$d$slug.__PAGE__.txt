@@ -1,7 +1,0 @@
-1:"$Sreact.fragment"
-2:I[8257,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"StudioShell"]
-3:I[1815,["449","static/chunks/app/components/%5Bslug%5D/page-9b384f54a0ef4499.js"],"ComponentDetail"]
-4:I[484,[],"OutletBoundary"]
-5:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"children":["$","$L3",null,{"entry":{"slug":"floating-field","title":"Floating Field","category":"Forms","description":"A semantic floating-label input with focus, required and validation-ready states.","status":"Accessible","code":"<FloatingField\n  id=\"project-name\"\n  label=\"Project name\"\n  required\n/>","preview":["$","div",null,{"className":"field-demo","children":["$","div",null,{"className":"floating-field","children":[["$","input",null,{"id":"detail-project-name","placeholder":" ","required":true}],["$","label",null,{"htmlFor":"detail-project-name","children":"Project name"}]]}]}]}}]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"12Z2g_DTNDhH_b0rbxMBK"}
-6:null
