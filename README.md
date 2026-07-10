@@ -1,29 +1,22 @@
-# Studio UI v0.7.0
+# Studio UI v0.9.0
 
-A reusable React component library and visual browser for building client websites and web applications from documented local building blocks.
+Quality and API refinement release for the reusable Studio UI component library.
 
-## This release
+## Included
+- 49 documented entries
+- Functional global component search with Command/Ctrl + K
+- Dedicated quality and accessibility report
+- Component API tables and source-path documentation
+- Responsive desktop, tablet and mobile previews
+- Light and dark themes
+- Vite + React + TypeScript
+- Vercel-ready SPA routing
 
-- 44 documented component entries
-- Customer, invoice and booking cards
-- Notification center
-- Kanban workflow board
-- File-upload pattern
-- Compact dashboard layout composition
-- Existing data, navigation, feedback, overlays, forms, buttons and cards retained
-- Search, category filtering, responsive previews and copy-ready examples
-
-## Run locally
-
+## Commands
 ```bash
 npm install
 npm run dev
-```
-
-## Production
-
-```bash
 npm run build
 ```
 
-The generated `dist` directory is deployed by Vercel. Node 22 and npm 10.9.4 are pinned. No environment-specific lockfile is included.
+Node.js 22 is configured in `.nvmrc` and `package.json`.

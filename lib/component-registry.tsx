@@ -1,3 +1,8 @@
+import { AnalyticsPageTemplate } from "@/components/ui/analytics-page-template";
+import { AuthPageTemplate } from "@/components/ui/auth-page-template";
+import { CrmPageTemplate } from "@/components/ui/crm-page-template";
+import { LandingPageTemplate } from "@/components/ui/landing-page-template";
+import { SettingsPageTemplate } from "@/components/ui/settings-page-template";
 import { BookingCard } from "@/components/ui/booking-card";
 import { CustomerCard } from "@/components/ui/customer-card";
 import { DashboardLayout } from "@/components/ui/dashboard-layout";
@@ -43,6 +48,13 @@ import { SelectField } from "@/components/ui/select-field";
 import { TextareaField } from "@/components/ui/textarea-field";
 import { ToggleSwitch } from "@/components/ui/toggle-switch";
 
+export type ComponentProp = {
+  name: string;
+  type: string;
+  defaultValue?: string;
+  description: string;
+};
+
 export type ComponentEntry = {
   slug: string;
   title: string;
@@ -51,6 +63,9 @@ export type ComponentEntry = {
   status: string;
   code: string;
   preview: React.ReactNode;
+  source?: string;
+  accessibility?: string[];
+  props?: ComponentProp[];
 };
 
 export const componentRegistry: ComponentEntry[] = [
@@ -62,6 +77,14 @@ export const componentRegistry: ComponentEntry[] = [
     status: "Six states",
     code: `<ActionButton\n  variant="primary"\n  leftIcon={<Plus size={16} />}\n>\n  Add item\n</ActionButton>`,
     preview: <ActionButton leftIcon={<Plus size={16}/>}>Add item</ActionButton>,
+    source: "components/ui/action-button.tsx",
+    accessibility: ["Native button semantics", "Visible keyboard focus", "Disabled state while loading"],
+    props: [
+      { name: "variant", type: '"primary" | "secondary" | "outline" | "ghost" | "danger"', defaultValue: '"primary"', description: "Controls the visual emphasis." },
+      { name: "size", type: '"sm" | "md" | "lg"', defaultValue: '"md"', description: "Controls height and horizontal padding." },
+      { name: "loading", type: "boolean", defaultValue: "false", description: "Shows progress and prevents repeated actions." },
+      { name: "leftIcon / rightIcon", type: "ReactNode", description: "Adds a decorative or meaningful icon." },
+    ],
   },
   {
     slug: "button-showcase",
@@ -98,6 +121,15 @@ export const componentRegistry: ComponentEntry[] = [
     status: "Typed props",
     code: `<DashboardCard\n  title="Revenue"\n  value="€24,860"\n  change="12.4%"\n  progress={76}\n  icon={<CircleDollarSign size={16} />}\n/>`,
     preview: <DashboardCard title="Revenue" value="€24,860" change="12.4%" progress={76} icon={<CircleDollarSign size={16}/>} />,
+    source: "components/ui/dashboard-card.tsx",
+    accessibility: ["Readable metric hierarchy", "Progress value exposed semantically", "Icon does not replace the title"],
+    props: [
+      { name: "title", type: "string", description: "Metric label." },
+      { name: "value", type: "string", description: "Primary displayed value." },
+      { name: "change", type: "string", description: "Comparison or change indicator." },
+      { name: "progress", type: "number", description: "Progress percentage from 0 to 100." },
+      { name: "icon", type: "ReactNode", description: "Optional supporting icon." },
+    ],
   },
   {
     slug: "animated-flip-card",
@@ -125,6 +157,13 @@ export const componentRegistry: ComponentEntry[] = [
     status: "Accessible",
     code: `<FloatingField\n  id="project-name"\n  label="Project name"\n  required\n/>`,
     preview: <div className="field-demo"><FloatingField id="detail-project-name" label="Project name" required /></div>,
+    source: "components/ui/floating-field.tsx",
+    accessibility: ["Explicit label association", "Native required state", "Visible focus treatment"],
+    props: [
+      { name: "id", type: "string", description: "Connects the label and input." },
+      { name: "label", type: "string", description: "Visible field label." },
+      { name: "required", type: "boolean", defaultValue: "false", description: "Marks the native input as required." },
+    ],
   },
   {
     slug: "search-field",
@@ -343,6 +382,52 @@ export const componentRegistry: ComponentEntry[] = [
     code: `<DashboardLayout />`, preview: <DashboardLayout />,
   },
 
+
+  {
+    slug: "landing-page-template",
+    title: "Landing Page Template",
+    category: "Templates",
+    description: "A responsive marketing-page composition with navigation, hero content, proof points and a product preview.",
+    status: "Page composition",
+    code: `<LandingPageTemplate />`,
+    preview: <LandingPageTemplate />,
+  },
+  {
+    slug: "auth-page-template",
+    title: "Authentication Page",
+    category: "Templates",
+    description: "A complete sign-in experience combining brand storytelling, social proof and an accessible account form.",
+    status: "Page composition",
+    code: `<AuthPageTemplate />`,
+    preview: <AuthPageTemplate />,
+  },
+  {
+    slug: "crm-page-template",
+    title: "CRM Customers Page",
+    category: "Templates",
+    description: "A practical customer-management layout with navigation, search, filters, status labels and responsive records.",
+    status: "Business template",
+    code: `<CrmPageTemplate />`,
+    preview: <CrmPageTemplate />,
+  },
+  {
+    slug: "settings-page-template",
+    title: "Settings Page",
+    category: "Templates",
+    description: "A structured account-settings page with section navigation, profile fields and preference controls.",
+    status: "Application template",
+    code: `<SettingsPageTemplate />`,
+    preview: <SettingsPageTemplate />,
+  },
+  {
+    slug: "analytics-page-template",
+    title: "Analytics Page",
+    category: "Templates",
+    description: "A dashboard composition with metric cards, a trend chart, channel distribution and export controls.",
+    status: "Dashboard template",
+    code: `<AnalyticsPageTemplate />`,
+    preview: <AnalyticsPageTemplate />,
+  },
 ];
 
 export function getComponent(slug: string) {
